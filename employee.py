@@ -45,7 +45,7 @@ class MonthlyEmployee(Employee):
     def __str__(self):
         self.pay = self.get_pay()
         if self.commission != "":
-            return f"{self.name} works on a contract of {self.salary} salary and {self.commission} Their total pay is {self.pay}."
+            return f"{self.name} works on a monthly salary of {self.salary} salary and {self.commission} Their total pay is {self.pay}."
         else:
             return f"{self.name} works on a monthly salary of {self.salary}. Their total pay is {self.pay}."
 
