@@ -27,9 +27,9 @@ class HourlyEmployee(Employee):
     def __str__(self): 
         self.pay = self.get_pay()
         if self.commission != "":  
-             return  f"{self.name} works on a contract of {self.hours} hours at {self.rate}/hour and {self.commission} Their total pay is {self.pay}."
+             return  f"{self.name} works on a contract of {self.hours} hours at {self.rate}/hour and {self.commission}.  Their total pay is {self.pay}."
         else:   
-            return f"{self.name} works on a contract of {self.hours} hours at {self.rate}/hour. Their total pay is {self.pay}."
+            return f"{self.name} works on a contract of {self.hours} hours at {self.rate}/hour.  Their total pay is {self.pay}."
 
 class MonthlyEmployee(Employee):
     def __init__(self, name, salary, commission=""):
@@ -45,9 +45,9 @@ class MonthlyEmployee(Employee):
     def __str__(self):
         self.pay = self.get_pay()
         if self.commission != "":
-            return f"{self.name} works on a monthly salary of {self.salary} salary and {self.commission} Their total pay is {self.pay}."
+            return f"{self.name} works on a monthly salary of {self.salary} and {self.commission}  Their total pay is {self.pay}."
         else:
-            return f"{self.name} works on a monthly salary of {self.salary}. Their total pay is {self.pay}."
+            return f"{self.name} works on a monthly salary of {self.salary}.  Their total pay is {self.pay}."
 
 class BonusCommission:
     def __init__(self, amount):
